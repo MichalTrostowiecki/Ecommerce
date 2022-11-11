@@ -1,24 +1,24 @@
 import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
-import About from "./About";
-import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div>
-      <div>
-        <h1>My Shop</h1>
+    <div className="header--container">
+      <div className="header--name">
+        <h1>My shop</h1>
       </div>
+      <div className="header--links">
+        <Link className="link--header" to="/home">
+          Home
+        </Link>
+        <Link className="link--header" to="/about">
+          About
+        </Link>
 
-      <Link to={"/about"}>About Us</Link>
-      <Link>Contact Us</Link>
-
-      <Routes>
-        <Route path="/about" element={<About />} />
-        <Route path="/about" element={<Footer />} />
-      </Routes>
-
-      <h1>Header</h1>
+        <Link className="link--header" to="/contact">
+          Contact Us
+        </Link>
+      </div>
     </div>
   );
 }
