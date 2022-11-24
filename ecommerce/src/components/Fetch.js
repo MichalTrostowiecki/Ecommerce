@@ -9,7 +9,7 @@ export default function FetchData(props) {
         method: "GET",
         headers: {
           "X-RapidAPI-Key":
-            "b5a9039af8mshf35a3ef3045004ep1efb1cjsndf46ef774554",
+            
           "X-RapidAPI-Host": "asos2.p.rapidapi.com",
         },
       };
